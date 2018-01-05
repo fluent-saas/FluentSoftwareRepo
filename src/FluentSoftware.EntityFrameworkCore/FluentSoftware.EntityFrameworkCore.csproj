@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>netcoreapp2.0</TargetFramework><AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback><RootNamespace>FluentSoftware</RootNamespace><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType><GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles></PropertyGroup><ItemGroup>
+  <Compile Remove="Migrations\Migrations_Backup\**" />
+  <EmbeddedResource Remove="Migrations\Migrations_Backup\**" />
+  <None Remove="Migrations\Migrations_Backup\**" />
+</ItemGroup><ItemGroup>
+  <Compile Remove="Migrations\20170424115119_Initial_Migrations.cs" />
+  <Compile Remove="Migrations\20170424115119_Initial_Migrations.Designer.cs" />
+  <Compile Remove="Migrations\20170608053244_Upgraded_To_Abp_2_1_0.cs" />
+  <Compile Remove="Migrations\20170608053244_Upgraded_To_Abp_2_1_0.Designer.cs" />
+  <Compile Remove="Migrations\20170621153937_Added_Description_And_IsActive_To_Role.cs" />
+  <Compile Remove="Migrations\20170621153937_Added_Description_And_IsActive_To_Role.Designer.cs" />
+  <Compile Remove="Migrations\20170703134115_Remove_IsActive_From_Role.cs" />
+  <Compile Remove="Migrations\20170703134115_Remove_IsActive_From_Role.Designer.cs" />
+  <Compile Remove="Migrations\20170804083601_Upgraded_To_Abp_v2.2.2.cs" />
+  <Compile Remove="Migrations\20170804083601_Upgraded_To_Abp_v2.2.2.Designer.cs" />
+</ItemGroup><ItemGroup><PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" /><PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" /><PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" /><PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1" /></ItemGroup><ItemGroup><ProjectReference Include="..\FluentSoftware.Core\FluentSoftware.Core.csproj" /></ItemGroup><ItemGroup><DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /></ItemGroup></Project>
